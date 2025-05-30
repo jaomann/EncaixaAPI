@@ -1,4 +1,4 @@
-﻿namespace EncaixaAPI.ViewModels
+﻿namespace EncaixaAPI.ViewModels.Packing
 {
     public class Container
     {

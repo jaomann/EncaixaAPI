@@ -1,7 +1,7 @@
 ﻿using EncaixaAPI.Core.Contracts;
 using EncaixaAPI.Core.Entities;
-using EncaixaAPI.ViewModels;
-using static EncaixaAPI.ViewModels.OutputOrders;
+using EncaixaAPI.ViewModels.Packing;
+using static EncaixaAPI.ViewModels.Packing.OutputOrders;
 
 namespace EncaixaAPI.Services
 {

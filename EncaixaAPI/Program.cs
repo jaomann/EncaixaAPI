@@ -3,7 +3,7 @@ using EncaixaAPI.Core.Entities;
 using EncaixaAPI.Database;
 using EncaixaAPI.Repository;
 using EncaixaAPI.Services;
-using EncaixaAPI.ViewModels;
+using EncaixaAPI.ViewModels.Auth;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;

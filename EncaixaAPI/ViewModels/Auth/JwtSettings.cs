@@ -1,4 +1,4 @@
-﻿namespace EncaixaAPI.ViewModels
+﻿namespace EncaixaAPI.ViewModels.Auth
 {
     public class JwtSettings
     {

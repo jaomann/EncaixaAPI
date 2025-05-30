@@ -1,6 +1,6 @@
-﻿using static EncaixaAPI.ViewModels.OutputOrders;
+﻿using static EncaixaAPI.ViewModels.Packing.OutputOrders;
 
-namespace EncaixaAPI.ViewModels
+namespace EncaixaAPI.ViewModels.Packing
 {
     public class OutputOrders
     {

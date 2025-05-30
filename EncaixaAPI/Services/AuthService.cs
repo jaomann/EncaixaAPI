@@ -2,7 +2,7 @@
 using EncaixaAPI.Core.Contracts;
 using EncaixaAPI.Core.Entities;
 using EncaixaAPI.Database;
-using EncaixaAPI.ViewModels;
+using EncaixaAPI.ViewModels.Auth;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;

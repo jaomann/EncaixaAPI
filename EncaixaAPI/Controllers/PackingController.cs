@@ -1,7 +1,7 @@
 ﻿using EncaixaAPI.Core.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using static EncaixaAPI.ViewModels.OutputOrders;
+using static EncaixaAPI.ViewModels.Packing.OutputOrders;
 
 namespace EncaixaAPI.Controllers
 {

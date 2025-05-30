@@ -1,5 +1,5 @@
 ﻿using EncaixaAPI.Core.Entities;
-using EncaixaAPI.ViewModels;
+using EncaixaAPI.ViewModels.Auth;
 
 namespace EncaixaAPI.Core.Contracts
 {

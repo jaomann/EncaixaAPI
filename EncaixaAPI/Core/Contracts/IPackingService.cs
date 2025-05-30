@@ -1,5 +1,5 @@
-﻿using EncaixaAPI.ViewModels;
-using static EncaixaAPI.ViewModels.OutputOrders;
+﻿using EncaixaAPI.ViewModels.Packing;
+using static EncaixaAPI.ViewModels.Packing.OutputOrders;
 
 namespace EncaixaAPI.Core.Contracts
 {

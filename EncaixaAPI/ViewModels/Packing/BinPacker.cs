@@ -1,7 +1,7 @@
 ﻿using EncaixaAPI.Core.Entities;
 using EncaixaAPI.Services;
 
-namespace EncaixaAPI.ViewModels
+namespace EncaixaAPI.ViewModels.Packing
 {
     public class BinPacker
     {

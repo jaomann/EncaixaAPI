@@ -1,7 +1,7 @@
 ﻿using EncaixaAPI.Core.Contracts;
 using EncaixaAPI.Core.Entities;
 using EncaixaAPI.Database;
-using EncaixaAPI.ViewModels;
+using EncaixaAPI.ViewModels.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

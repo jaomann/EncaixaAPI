@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EncaixaAPI.ViewModels
+namespace EncaixaAPI.ViewModels.Auth
 {
     public class LoginDto
     {
