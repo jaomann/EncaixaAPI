@@ -53,3 +53,8 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /.vs/EncaixaAPI
+.env
+
+/sql-logs
+/.vs/ProjectEvaluation
+/EncaixaAPI/appsettings.json
