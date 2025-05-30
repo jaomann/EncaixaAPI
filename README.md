@@ -125,7 +125,7 @@ Adicione bearer + seu token para logar
 
     PackingController → PackingService → BinPacker (algoritmo)
                             ↓
-                    BoxRepository → Context → PostgreSQL
+                    BoxRepository → Context → Sql Server
   Autenticação:
     
     AuthController → AuthService → JWT
