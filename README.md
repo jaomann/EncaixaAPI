@@ -33,6 +33,10 @@ Projeto ASP.NET Core que fornece uma API RESTful para controle e gerenciamento d
     ```bash
     git pull
 
+3. **Ajuste nas configurações**
+   Retire o ".example" dos arquivos, appsettings.example.json e .env.example
+   Não se esqueça de criar uma senha forte para o SQL Server na variável DB_PASSWOR
+
 3. **Suba os contêineres**
 
     Este comando irá compilar a imagem da API e subir os serviços (API + banco de dados):
