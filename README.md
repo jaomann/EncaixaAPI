@@ -1,6 +1,6 @@
 # EncaixaAPI
 
-Projeto ASP.NET Core que fornece uma API RESTful para controle e gerenciamento de encaixes em estabelecimentos. Desenvolvido como parte de um desafio técnico, com foco em boas práticas de arquitetura, organização e entrega de software via contêineres.
+Projeto ASP.NET Core que fornece uma API RESTful para controle e gerenciamento de encaixes em estabelecimentos. Com foco em boas práticas de arquitetura, organização e entrega de software via contêineres.
 
 ## 🔧 Tecnologias Utilizadas
 
@@ -34,17 +34,22 @@ Projeto ASP.NET Core que fornece uma API RESTful para controle e gerenciamento d
     git pull
 
 3. **Ajuste nas configurações**
+   ```
    Retire o ".example" dos arquivos, appsettings.example.json e .env.example
-   Não se esqueça de criar uma senha forte para o SQL Server na variável DB_PASSWOR
+   Não se esqueça de criar uma senha forte para o SQL Server na variável DB_PASSWORD
+   dentro do arquivo .env
 
 3. **Suba os contêineres**
+    Acesse o cmd e vá até a pasta com o projeto clonado e atualizado
+      ```
+      cd diretorio\EncaixaAPI\
+      ```
+      
+    Rode este comando, ele irá compilar a imagem da API e subir os serviços (API + banco de dados):
 
-    Este comando irá compilar a imagem da API e subir os serviços (API + banco de dados):
-    ```bash
-    
-    docker compose up --build -d
+       docker compose up --build -d
 
-4. **Acesse o Swagger**
+5. **Acesse o Swagger**
 
 Após o Docker finalizar o build, acesse:
 
@@ -69,54 +74,6 @@ Faça o login
 Adicione bearer + seu token para logar
 
 ![image](https://github.com/user-attachments/assets/3b270a6a-2cac-4d33-b099-d62ca2e589ac)
-
-
-
-# 🏗️ Estrutura do Projeto
-
-    EncaixaAPI/
-    ├── Controllers/            # Controladores da API
-    │   ├── AuthController.cs   # Endpoints de autenticação
-    │   └── PackingController.cs # Lógica de empacotamento
-    │
-    ├── Core/                   # Interfaces centrais
-    │   ├── Contracts/          # Contratos de serviços/repositórios
-    │   │   ├── IAuthService.cs
-    │   │   ├── IBoxRepository.cs
-    │   │   ├── IBoxServices.cs
-    │   │   └── IPackingService.cs
-    │   │
-    │   └── Entities/           # Entidades de domínio
-    │       ├── Box.cs          # Modelo de caixa
-    │       └── Users.cs        # Modelo de usuário
-    │
-    ├── Data/                   # Camada de dados
-    │   ├── Database/
-    │   │   └── Context.cs      # Contexto do EF Core
-    │   │
-    │   └── Repository/         # Implementações de repositório
-    │       └── BoxRepository.cs
-    │
-    ├── Services/               # Lógica de negócios
-    │   ├── AuthService.cs      # Serviço de autenticação
-    │   ├── BoxServices.cs      # Serviço de caixas
-    │   └── PackingService.cs   # Algoritmo de empacotamento
-    │
-    ├── ViewModels/             # DTOs e modelos de visualização
-    │   ├── Auth/
-    │   │   ├── AuthResponse.cs
-    │   │   └── LoginDTO.cs
-    │   │
-    │   └── Packing/
-    │       ├── BinPacker.cs    # Algoritmo de bin packing
-    │       ├── Container.cs    # Modelo de container
-    │       ├── Items.cs        # Modelo de itens
-    │       ├── IwSettings.cs   # Configurações
-    │       └── OutputOrders.cs # Modelo de saída
-    │
-    ├── docker-compose.yml      # Configuração Docker (API + PostgreSQL)
-    ├── Dockerfile              # Build da aplicação
-    └── EncaixaAPI.csproj       # Configuração do projeto
 
 
 📌 Principais Relacionamentos:
