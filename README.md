@@ -40,6 +40,7 @@ Projeto ASP.NET Core que fornece uma API RESTful para controle e gerenciamento d
    dentro do arquivo .env
 
 3. **Suba os contêineres**
+   
     Acesse o cmd e vá até a pasta com o projeto clonado e atualizado
       ```
       cd diretorio\EncaixaAPI\
